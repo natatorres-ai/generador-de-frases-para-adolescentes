@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Frases | Adolescentes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1>Inspiración Diaria</h1>
+            <p class="subtitle">Pensado para tu crecimiento y madurez.</p>
+        </header>
+
+        <main>
+            <div id="phrase-display" class="phrase-card">
+                <p id="phrase-text">Haz clic para descubrir tu frase de hoy.</p>
+                <div id="phrase-meta" class="hidden">
+                    <span id="meta-theme" class="badge">Tema</span>
+                    <span id="meta-tone" class="badge">Tono</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="theme-select">Tema</label>
+                    <select id="theme-select">
+                        <option value="SORPRESA">Sorpresa</option>
+                        <option value="Responsabilidad">Responsabilidad</option>
+                        <option value="Independencia">Independencia</option>
+                        <option value="Futuro">Futuro</option>
+                        <option value="Crecimiento">Crecimiento</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="tone-select">Tono</label>
+                    <select id="tone-select">
+                        <option value="Inspirador">Inspirador</option>
+                        <option value="Reflexivo">Reflexivo</option>
+                        <option value="Firme">Firme</option>
+                        <option value="Sereno">Sereno</option>
+                        <option value="Cercano">Cercano</option>
+                    </select>
+                </div>
+
+                <button id="generate-btn" class="primary-btn">Generar Frase</button>
+            </div>
+        </main>
+
+        <footer>
+            <div class="history-toggle">
+                <button id="toggle-history">Ver Historial</button>
+            </div>
+            <div id="history-panel" class="hidden">
+                <h3>Historial Reciente</h3>
+                <ul id="history-list"></ul>
+                <button id="clear-history">Borrar Historial</button>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
